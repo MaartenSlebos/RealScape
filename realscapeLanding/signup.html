@@ -5,28 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RealScape - Sign Up</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>RealScape</h1>
-    <p>Create your adventurer account</p>
-  </header>
-  <section class="auth">
-    <h2>Sign Up</h2>
-    <button id="googleSignInButton">Sign Up with Google</button>
-    <div class="email-login">
-      <h3>Or use Email</h3>
-      <input type="email" id="emailInput" placeholder="Email">
-      <input type="password" id="passwordInput" placeholder="Password">
-      <button id="signUpButton">Sign Up</button>
-    </div>
-    <p><a href="login.html">Already have an account? Login here</a></p>
-  </section>
-  <footer>
-    <p>© 2025 RealScape. All rights reserved.</p>
-  </footer>
+  <div class="parchment">
+    <header>
+      <h1 class="runescape-title">RealScape</h1>
+      <p class="subtitle">Begin Your Adventure</p>
+    </header>
+    
+    <section class="hero">
+      <div class="scroll-container">
+        <h2>Create Your Account</h2>
+        <div class="form-container">
+          <input type="email" id="emailInput" placeholder="Enter your email" class="runescape-input">
+          <input type="password" id="passwordInput" placeholder="Choose your password" class="runescape-input">
+          <button id="signUpButton" class="runescape-btn">Create Account</button>
+          <button id="googleSignInButton" class="runescape-btn google-btn">
+            Sign up with Google
+          </button>
+          <div id="pointsDisplay" class="points-display"></div>
+        </div>
+        <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </section>
+    
+    <footer>
+      <p>© 2025 RealScape. All rights reserved.</p>
+    </footer>
+  </div>
+  
+  <!-- Firebase Scripts -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
-  <script src="auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
