@@ -9,6 +9,14 @@
 </head>
 <body>
     <div class="parchment">
+        <div class="audio-player">
+            <audio id="bgMusic" loop>
+                <source src="music/Scape_Main.mp3" type="audio/mpeg">
+            </audio>
+            <button id="musicToggle" class="music-btn">
+                🎵 Play Music
+            </button>
+        </div>
         <header>
             <h1 class="runescape-title">RealScape</h1>
             <p class="subtitle">Turn your life into an epic adventure</p>
@@ -33,5 +41,21 @@
   <!-- Optional: Analytics -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const music = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicToggle');
+        
+        musicBtn.addEventListener('click', function() {
+            if (music.paused) {
+                music.play();
+                musicBtn.textContent = '🔇 Mute Music';
+            } else {
+                music.pause();
+                musicBtn.textContent = '🎵 Play Music';
+            }
+        });
+    });
+  </script>
 </body>
 </html>
