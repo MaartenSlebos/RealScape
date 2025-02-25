@@ -116,3 +116,80 @@ body {
   .email-login button:hover {
     background-color: #d32f49;
   }
+
+  .hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .hero button:hover {
+    background-color: #d32f49;
+  }
+  
+  .login-link {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #e0e0e0;
+  }
+  
+  .login-link a {
+    color: #f8b400;
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+
+  .auth {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .auth h2 {
+    font-size: 2em;
+    color: #f8b400;
+  }
+  
+  .auth button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  
+  .auth button:hover {
+    background-color: #d32f49;
+  }
+  
+  #googleSignInButton {
+    background-color: #4285f4;
+  }
+  
+  #googleSignInButton:hover {
+    background-color: #357abd;
+  }
+
+  /* New or updated style for the signup link in .auth */
+.auth p a {
+    font-size: 1.1em;
+    color: #f8b400; /* Gold to match your theme */
+    text-decoration: none;
+    font-weight: bold; /* Make it stand out */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .auth p a:hover {
+    color: #e94560; /* Red on hover for contrast */
+    text-decoration: underline; /* Add underline for interactivity */
+  }
