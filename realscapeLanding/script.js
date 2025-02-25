@@ -20,6 +20,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-document.getElementById("joinButton").addEventListener("click", function() {
-    document.getElementById("pointsDisplay").innerText = "You’ve earned 10 XP for starting your journey!";
+// Google Sign-In
+document.getElementById("googleSignInButton").addEventListener("click", () => {
+    auth.signInWithPopup(googleProvider)
+      .then((result) => {
+        const user = result.user;
+        document.getElementById("pointsDisplay").innerText = `Welcome, ${user.displayName}! You’ve earned 10 XP!`;
+        console.log("User:", user.uid, user.email); // Save this UID for your app
+      })
+      .catch((error) => {
+        console.error("Error:", error.message);
+      });
   });
