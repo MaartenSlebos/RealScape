@@ -82,3 +82,37 @@ body {
   #googleSignInButton:hover {
     background-color: #357abd;
   }
+
+  .email-login {
+    margin-top: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .email-login h3 {
+    font-size: 1.2em;
+    color: #f8b400;
+    margin-bottom: 10px;
+  }
+  
+  .email-login input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #2a2a40;
+    color: white;
+  }
+  
+  .email-login button {
+    width: 48%;
+    margin: 5px 1%;
+    display: inline-block;
+  }
+  
+  .email-login button:hover {
+    background-color: #d32f49;
+  }

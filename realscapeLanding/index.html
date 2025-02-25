@@ -15,13 +15,23 @@
     <h2>Level Up Your Day</h2>
     <p>Earn points, unlock rewards, and conquer your goals like a hero.</p>
     <button id="googleSignInButton">Sign in with Google</button>
+    <div class="email-login">
+      <h3>Or use Email</h3>
+      <input type="email" id="emailInput" placeholder="Email">
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button id="signUpButton">Sign Up</button>
+      <button id="signInButton">Sign In</button>
+    </div>
     <div id="pointsDisplay">Adventure awaits...</div>
   </section>
   <footer>
     <p>© 2025 RealScape. All rights reserved.</p>
   </footer>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+  <!-- Firebase v8 CDN -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <!-- Optional: Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
