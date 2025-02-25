@@ -66,3 +66,19 @@ body {
     bottom: 0;
     width: 100%;
   }
+
+
+#googleSignInButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #googleSignInButton:hover {
+    background-color: #357abd;
+  }
