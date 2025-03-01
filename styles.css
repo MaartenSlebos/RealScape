@@ -148,6 +148,10 @@ img {
     border: 2px solid #4A5659;
 }
 
+#spacer {
+    width: 24px;
+}
+
 /* visual debugging */
 /*.site, .header, .hero, .footer, .logo, .login, .usp, .sp, .cta, .ctaBox {
     border: 1px solid red;
