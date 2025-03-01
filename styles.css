@@ -67,11 +67,29 @@ body {
 
 .sp {
     display: flex;
-    width: 300px;
-    height: 500px;
+    flex-direction: column;
+    width: 236px;
+    height: 436px;
     gap: 24px;
     flex-shrink: 0;
+    flex-grow: 0;
     border-radius: 8px;
+    background-color: grey;
+    padding: 32px;
+}
+
+#spHeading {
+    font-size: 24px;
+    padding: 0px 14px 0px;
+}
+
+#spImage {
+    text-align: center;
+}
+
+#spText {
+    height: 120px;
+    padding: 0px 14px 0px;
 }
 
 .cta {
@@ -80,6 +98,7 @@ body {
     height: 300px;
     justify-content: center;
     align-items: center;
+    background-color: grey;
 }
 
 .ctaBox {
@@ -87,6 +106,7 @@ body {
     flex-grow: 0.7;
     height: 200px;
     border-radius: 8px;
+    background-color: white;
 }
 
 button {
@@ -103,7 +123,14 @@ a {
     font-size: 36px;
 }
 
+img {
+    border-radius: 8px;
+}
+
 /* visual debugging */
-.site, .header, .hero, .footer, .logo, .login, .usp, .sp, .cta, .ctaBox {
+/*.site, .header, .hero, .footer, .logo, .login, .usp, .sp, .cta, .ctaBox {
     border: 1px solid red;
 }
+*/
+
+
