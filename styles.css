@@ -37,12 +37,16 @@ body {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
     display: flex;
     flex-shrink: 0;
     height: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
