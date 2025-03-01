@@ -113,10 +113,18 @@ body {
 
 .ctaBox {
     display: flex;
+    flex-direction: column;
     flex-grow: 0.7;
     height: 200px;
     border-radius: 8px;
     background-color: #E8D9B5;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#ctaHeader {
+    font-size: 30px;
 }
 
 button {
