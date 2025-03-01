@@ -33,6 +33,6 @@ body {
 }
 
 /* visual debugging */
-.site, .header, .hero, .footer {
+.site, .header, .hero, .footer, .logo, .login {
     border: 1px solid red;
 }
