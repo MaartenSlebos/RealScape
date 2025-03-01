@@ -68,6 +68,22 @@ body {
     flex-shrink: 0;
 }
 
+.cta {
+    display: flex;
+    flex-grow: 1;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctaBox {
+    display: flex;
+
+    height: 100px;
+    width: 350px;
+    border-radius: 8px;
+}
+
 button {
     border-radius: 8px;
     padding: 8px 16px 8px;
@@ -79,6 +95,6 @@ a {
 }
 
 /* visual debugging */
-.site, .header, .hero, .footer, .logo, .login, .usp, .sp {
+.site, .header, .hero, .footer, .logo, .login, .usp, .sp, .cta, .ctaBox {
     border: 1px solid red;
 }
