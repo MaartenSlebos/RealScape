@@ -14,14 +14,21 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    height: 75px;
+    background-color: black;
+    align-items: center;
+    padding: 0px 32px 0px;
 }
 
 .logo {
     display: flex;
+    color: white;
+    font-size: 32px;
 }
 
 .login {
     display: flex;
+    color: white;
 }
 
 .hero {
@@ -30,6 +37,11 @@ body {
 
 .footer {
     display: flex;
+}
+
+button {
+    border-radius: 8px;
+    padding: 8px 16px 8px;
 }
 
 /* visual debugging */
