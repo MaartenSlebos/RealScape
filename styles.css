@@ -54,6 +54,11 @@ button {
     padding: 8px 16px 8px;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* visual debugging */
 .site, .header, .hero, .footer, .logo, .login {
     border: 1px solid red;
