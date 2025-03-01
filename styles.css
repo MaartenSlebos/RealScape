@@ -35,10 +35,11 @@ body {
 .hero {
     display: flex;
     flex-grow: 1;
-    flex-shrink: 1;
+    flex-shrink: 0;
     flex-basis: auto;
     align-items: center;
     justify-content: center;
+    height: 500px;
 }
 
 .footer {
@@ -47,6 +48,24 @@ body {
     height: 50px;
     align-items: center;
     justify-content: center;
+}
+
+.usp {
+    display: flex;
+    flex-grow: 0.5;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 24px 0px 24px 0px;
+    gap: 24px;
+}
+
+.sp {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    gap: 24px;
+    flex-shrink: 0;
 }
 
 button {
@@ -60,6 +79,6 @@ a {
 }
 
 /* visual debugging */
-.site, .header, .hero, .footer, .logo, .login {
+.site, .header, .hero, .footer, .logo, .login, .usp, .sp {
     border: 1px solid red;
 }
